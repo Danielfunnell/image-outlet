@@ -11,6 +11,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { Palette } from '@material-ui/icons'
+import MobileMenu from './components/MobileMenu'
+
 
 
 const theme = createMuiTheme({

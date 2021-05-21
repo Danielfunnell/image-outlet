@@ -5,7 +5,7 @@ import HeroImage from "../images/lens.jpg";
 import SearchForm from '../components/SearchForm';
 import Typography from "@material-ui/core/Typography";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     justifyContent: "center",
@@ -15,23 +15,28 @@ const useStyles = makeStyles(() => ({
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    position: 'relative'
+    position: "relative",
   },
   hero: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      
-      
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   heading: {
-      color: '#fff',
-      width: '100%',
-      height: '100%',
+    color: "#fff",
+    width: "100%",
+    height: "100%",
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "45px",
+    },
   },
   search: {
     width: "60%",
     paddingTop: "25px",
+    [theme.breakpoints.down("sm")]: {
+      width: "80%",
+    },
   },
 }));
 
@@ -42,7 +47,7 @@ export default function Hero() {
         <div className={classes.hero}>
           <Typography
             variant="h1"
-            component="h2"
+            component="h1"
             gutterBottom
             className={classes.heading}
           >

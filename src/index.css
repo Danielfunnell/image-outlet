@@ -23,6 +23,15 @@ body {
   font-weight: 300;
 }
 
+@media (mix-width: 500px) {
+  
+}
+
+h1{
+
+  
+}
+
 p {
   margin-bottom: 1.25rem;
 }
@@ -30,6 +39,7 @@ ul {
   list-style-type: none;
 }
 a {
+  color: #000;
   text-decoration: none;
   
 }
